@@ -45,21 +45,64 @@ table {
 
 /* Reset ends */
 
-.title{
-    position: absolute;
-}
 section{
     display: flex;
     height: 100vh;
+    color: grey;
 }
+
+ /* Work section */
 .work{
-    background: lightblue;
+    font-size: 200%;
+    background: ;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
 }
+.title{
+    align-self: center;
+    margin-bottom: 50px;
+    font-size: 50%;
+}
+
+.work ul{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.work li{
+    margin: 0px;
+    padding: 20px;
+    align-self: center;
+
+}
+/* Image container */ 
 .image-container{
     background: lightpink;
-    flex-grow: 1;
+    flex-grow: 1.5;
 }
+/* Navigation */
 nav{
-    background: lightyellow; 
+    background: #ffffff;
+    display: flex;
+    align-content: center
 }
+nav ul{
+height: 100vh;
+    
+}
+nav li{
+  transform: rotate(90deg);
+	transform-origin: left top 1;
+    justify-content: center;
+    display: flex;
+    margin-top: 21vh;
+}
+
+nav li a{
+
+}
+
+/* Media Queries */
