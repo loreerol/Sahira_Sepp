@@ -43,3 +43,23 @@ table {
 	border-spacing: 0;
 }
 
+/* Reset ends */
+
+.title{
+    position: absolute;
+}
+section{
+    display: flex;
+    height: 100vh;
+}
+.work{
+    background: lightblue;
+    flex-grow: 1;
+}
+.image-container{
+    background: lightpink;
+    flex-grow: 1;
+}
+nav{
+    background: lightyellow; 
+}
