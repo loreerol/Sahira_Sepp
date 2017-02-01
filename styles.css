@@ -55,8 +55,11 @@ a{
     color: grey;
     background-color: #caebd0;
 }
-a:hover{
+li:hover{
     color: #5d5d5d;
+}
+.active{
+    
 }
  /* Work section */
 .work{
@@ -82,21 +85,30 @@ a:hover{
 .work li{
     margin: 0px;
     padding: 20px;
+    width: 100%;
+    text-align: center;
     align-self: center;
 
 }
 /* Image container */ 
 .image-container{
-    background-image: url(_resources/sahira-5.jpg);
-    background-size: 150%;
-    background-repeat: no-repeat;
+    background-color: #20212e;
     flex-grow: 1.5;
     overflow: hidden;
     flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+
 }
 
 img{
-    height: 100vw;
+    width: ;
+    height: 100vh;
+    align-self: center;
+    
+}
+.hidden{
+    display: none;
 }
 /* Navigation */
 nav{
@@ -126,8 +138,11 @@ nav li:first-child{
      
     }
 .image-container{
-        flex-grow:0;
+        flex-grow: 0;
+    flex-basis: 0px;
+    
     }
+   
     nav{
         justify-content: center
     }
