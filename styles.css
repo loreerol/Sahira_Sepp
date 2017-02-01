@@ -84,11 +84,14 @@ li:hover{
 }
 .work li{
     margin: 0px;
-    padding: 20px;
     width: 100%;
     text-align: center;
     align-self: center;
 
+}
+.work a{
+    display: block;
+    padding:10px;
 }
 /* Image container */ 
 .image-container{
