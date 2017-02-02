@@ -57,3 +57,25 @@ function replaceHidden4(event){
 }
 document.getElementById("menu-performances").addEventListener("mouseenter", removeHidden4);
 document.getElementById("menu-performances").addEventListener("mouseleave", replaceHidden4);
+
+
+
+
+// smooth page transitions
+//$(function(){
+//    var request = window.location.hash;
+//    
+//    if(request == #page-2){
+//       $('.page.current').removeClass('current');
+//        $(.page).eq(1).addClass('current');
+//       }
+//    
+//    $('nav a').click(function(){
+//        var speed = 200;
+//        var i = $(this).index();
+//        $('.page.current').animate({opacity: 0},speed, function(){
+//            $(this).removeClass('current');
+//            $('.page').eq(i).css('marginTop', 30).animate({opacity:1, marginTop: 50}).addClass('current');
+//        });
+//    })
+//})

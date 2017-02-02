@@ -49,11 +49,21 @@ a{
 
 /* Reset ends */
 
+.page{
+    visibility: hidden;
+    opacity: 0;
+}
+.page.current{
+    visibility: visible;
+    opacity: 1;
+}
+
 .flex-parent{
     display: flex;
     height: 100vh;
     color: grey;
     background-color: #caebd0;
+    font-family: 'Kreon', sans-serif;
 }
 li:hover{
     color: #5d5d5d;
@@ -71,9 +81,10 @@ li:hover{
     justify-content: center;
     flex-basis: 50%;
 }
+
 .title{
     align-self: center;
-    font-size: 50%;
+    font-size: 50%;    
     
 }
 
@@ -87,6 +98,7 @@ li:hover{
     width: 100%;
     text-align: center;
     align-self: center;
+/*    font-family: 'Knewave', cursive;*/
 
 }
 .work a{
