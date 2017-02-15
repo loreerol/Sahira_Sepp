@@ -1,182 +1,168 @@
-/* CSS RESET */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
+        /* CSS RESET */
 
-/* Reset ends */
-
-.page{
-    visibility: hidden;
-    opacity: 0;
-}
-.page.current{
-    visibility: visible;
-    opacity: 1;
-}
-
-.flex-parent{
-    display: flex;
-    height: 100vh;
-    color: grey;
-    background-color: #caebd0;
-    font-family: 'Kreon', sans-serif;
-}
-li:hover{
-    color: #5d5d5d;
-}
-.active{
-    
-}
- /* Work section */
-.work{
-    font-size: 200%;
-    background: ;
-    flex-grow: .8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 50%;
-}
-
-.title{
-    align-self: center;
-    font-size: 50%;    
-    
-}
-
-.work ul{
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-}
-.work li{
-    margin: 0px;
-    width: 100%;
-    text-align: center;
-    align-self: center;
-/*    font-family: 'Knewave', cursive;*/
-
-}
-.work a{
-    display: block;
-    padding:10px;
-}
-/* Image container */ 
-.image-container{
-    background-color: #20212e;
-    flex-grow: 1.5;
-    overflow: hidden;
-    flex-basis: 50%;
-    display: flex;
-    justify-content: center;
-
-}
-
-img{
-    width: ;
-    height: 100vh;
-    align-self: center;
-    
-}
-.hidden{
-    display: none;
-}
-/* Navigation */
-nav{
-    display: flex;
-}
-nav ul{
-height: 100vh;
-    
-}
-nav li{
-  transform: rotate(90deg);s
-	transform-origin: left top 1;
-    justify-content: center;
-    display: flex;
-    margin-top: 40px;
-    padding: 11px;
-}
-
-nav li:first-child{
-    margin-top: 35vh;
-}
-
-/* Media Queries */
-@media (max-width:800px){
- section{
-        flex-direction: column-reverse;
-     
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
     }
-.image-container{
-        flex-grow: 0;
-    flex-basis: 0px;
-    
+    /* HTML5 display-role reset for older browsers */
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block;
     }
-   
-    nav{
-        justify-content: center
+
+    body {
+        line-height: 1;
     }
-    nav ul{
-        height: auto;
+
+    ol, ul {
+        list-style: none;
+    }
+
+    blockquote, q {
+        quotes: none;
+    }
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    /* Reset ends */
+
+    .flex-parent {
         display: flex;
-        flex-direction: row;
-        margin-top: 10px
+        height: 100vh;
+        color: grey;
+        background-color: #caebd0;
+        font-family: 'Kreon', sans-serif;
+    }
 
-    
+    li:hover {
+        color: #5d5d5d;
     }
-nav li{
-    transform: rotate(0deg);
-    margin: 0px;
-    }
-    nav li:first-child{
-    margin: 0px;
-    
-    }
+
+    .active {}
+    /* Work section */
    
+.page {
+        display: none;
+    
+    }
 
- 
+    .page.current {
+        display: inherit;
+    }
+    .main{
+        font-size: 200%;
+        background: ;
+        flex-grow: .8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 50%;
+    }
+
+    .title {
+        align-self: center;
+        font-size: 50%;
+    }
+
+    .work ul {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work li {
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        align-self: center;
+        /*    font-family: 'Knewave', cursive;*/
+    }
+
+    .work a {
+        display: block;
+        padding: 10px;
+    }
+    /* Image container */
+
+    .image-container {
+        background-color: #20212e;
+        flex-grow: 1.5;
+        overflow: hidden;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: ;
+        height: 100vh;
+        align-self: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+    /* Navigation */
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        height: 100vh;
+    }
+
+    nav li {
+        transform: rotate(90deg);
+        s transform-origin: left top 1;
+        justify-content: center;
+        display: flex;
+        margin-top: 40px;
+        padding: 11px;
+    }
+
+    nav li:first-child {
+        margin-top: 35vh;
+    }
+    /* Media Queries */
+
+    @media (max-width:800px) {
+        section {
+            flex-direction: column-reverse;
+        }
+        .image-container {
+            flex-grow: 0;
+            flex-basis: 0px;
+        }
+        nav {
+            justify-content: center
+        }
+        nav ul {
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px
+        }
+        nav li {
+            transform: rotate(0deg);
+            margin: 0px;
+        }
+        nav li:first-child {
+            margin: 0px;
+        }
