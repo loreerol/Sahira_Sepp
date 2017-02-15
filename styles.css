@@ -59,13 +59,15 @@
    
 .page {
         display: none;
-    
+        opacity: 0;
     }
 
-    .page.current {
+.page.current {
         display: inherit;
+        opacity: 1;
     }
-    .main{
+   
+.main{
         font-size: 200%;
         background: ;
         flex-grow: .8;
@@ -118,7 +120,7 @@
     .hidden {
         display: none;
     }
-    /* Navigation */
+/* Navigation */
 
     nav {
         display: flex;

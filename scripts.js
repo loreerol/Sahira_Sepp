@@ -61,3 +61,34 @@ function replaceHidden4(event) {
 }
 document.getElementById("menu-performances").addEventListener("mouseenter", removeHidden4);
 document.getElementById("menu-performances").addEventListener("mouseleave", replaceHidden4);
+
+//smooth transition between nav items
+
+var aboutPage = document.getElementById('page-about');
+var contactPage = document.getElementById('page-contact');
+var workPage = document.getElementById('page-work');
+
+function goToPageAbout(event){
+    workPage.classList.remove('current');
+    contactPage.classList.remove('current');
+    aboutPage.classList.add('current');
+}
+
+function goToPageContact(event){
+    workPage.classList.remove('current');
+    aboutPage.classList.remove('current');
+    contactPage.classList.add('current');
+}
+
+function goToPageWork(event){
+    aboutPage.classList.remove('current');
+    contactPage.classList.remove('current');
+    workPage.classList.add('current');
+}
+
+
+document.getElementById("link-about").addEventListener("click", goToPageAbout);
+document.getElementById("link-contact").addEventListener("click", goToPageContact);
+document.getElementById("link-work").addEventListener("click", goToPageWork);
+
+
