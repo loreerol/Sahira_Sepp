@@ -62,28 +62,52 @@ function replaceHidden4(event) {
 document.getElementById("menu-performances").addEventListener("mouseenter", removeHidden4);
 document.getElementById("menu-performances").addEventListener("mouseleave", replaceHidden4);
 
+
+
+
+
+
+
+
 //smooth transition between nav items
 
 var aboutPage = document.getElementById('page-about');
 var contactPage = document.getElementById('page-contact');
 var workPage = document.getElementById('page-work');
 
+var aboutLink = document.getElementById('link-about');
+var contactLink = document.getElementById('link-contact');
+var workLink = document.getElementById('link-work');
+
 function goToPageAbout(event){
     workPage.classList.remove('current');
     contactPage.classList.remove('current');
     aboutPage.classList.add('current');
+    
+    workLink.classList.remove('active');
+    contactLink.classList.remove('active');
+    aboutLink.classList.add('active');
+    
 }
 
 function goToPageContact(event){
     workPage.classList.remove('current');
     aboutPage.classList.remove('current');
     contactPage.classList.add('current');
+    
+     workLink.classList.remove('active');
+    contactLink.classList.add('active');
+    aboutLink.classList.remove('active');
 }
 
 function goToPageWork(event){
     aboutPage.classList.remove('current');
     contactPage.classList.remove('current');
     workPage.classList.add('current');
+    
+    workLink.classList.add('active');
+    contactLink.classList.remove('active');
+    aboutLink.classList.remove('active');
 }
 
 

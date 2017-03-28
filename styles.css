@@ -66,6 +66,7 @@
         display: inherit;
         opacity: 1;
     }
+
    
 .main{
         font-size: 200%;
@@ -75,20 +76,15 @@
         flex-direction: column;
         justify-content: center;
         flex-basis: 50%;
+        align-items: center;
     }
-
-    .title {
-        align-self: center;
-        font-size: 50%;
-    }
-
-    .work ul {
+    .page ul {
         align-self: center;
         display: flex;
         flex-direction: column;
     }
 
-    .work li {
+    .page li {
         margin: 0px;
         width: 100%;
         text-align: center;
@@ -96,7 +92,7 @@
         /*    font-family: 'Knewave', cursive;*/
     }
 
-    .work a {
+    .page a {
         display: block;
         padding: 10px;
     }
@@ -142,6 +138,13 @@
     nav li:first-child {
         margin-top: 35vh;
     }
+
+.active{
+    text-decoration: line-through;
+}
+
+
+
     /* Media Queries */
 
     @media (max-width:800px) {
