@@ -62,6 +62,20 @@ function replaceHidden4(event) {
 document.getElementById("menu-performances").addEventListener("mouseenter", removeHidden4);
 document.getElementById("menu-performances").addEventListener("mouseleave", replaceHidden4);
 
+//var aboutImg = document.getElementById("img-performances");
+//
+//function removeHidden4(event) {
+//    defaultImg.classList.add('hidden');
+//    performancesImg.classList.remove('hidden');
+//    console.log(event);
+//}
+//
+//function replaceHidden5(event) {
+//    aboutImg.classList.add('hidden');
+//    defaultImg.classList.remove('hidden');
+//}
+//document.getElementById("menu-performances").addEventListener("mouseenter", removeHidden4);
+//document.getElementById("menu-performances").addEventListener("mouseleave", replaceHidden4);
 
 
 
@@ -78,6 +92,17 @@ var workPage = document.getElementById('page-work');
 var aboutLink = document.getElementById('link-about');
 var contactLink = document.getElementById('link-contact');
 var workLink = document.getElementById('link-work');
+
+function goToPageWork(event){
+    aboutPage.classList.remove('current');
+    contactPage.classList.remove('current');
+    workPage.classList.add('current');
+    
+    workLink.classList.add('active');
+    contactLink.classList.remove('active');
+    aboutLink.classList.remove('active');
+}
+
 
 function goToPageAbout(event){
     workPage.classList.remove('current');
@@ -97,16 +122,6 @@ function goToPageContact(event){
     
      workLink.classList.remove('active');
     contactLink.classList.add('active');
-    aboutLink.classList.remove('active');
-}
-
-function goToPageWork(event){
-    aboutPage.classList.remove('current');
-    contactPage.classList.remove('current');
-    workPage.classList.add('current');
-    
-    workLink.classList.add('active');
-    contactLink.classList.remove('active');
     aboutLink.classList.remove('active');
 }
 
