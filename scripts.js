@@ -62,21 +62,36 @@ function replaceHidden4(event) {
 document.getElementById("menu-performances").addEventListener("mouseenter", removeHidden4);
 document.getElementById("menu-performances").addEventListener("mouseleave", replaceHidden4);
 
-//var aboutImg = document.getElementById("img-performances");
-//
-//function removeHidden4(event) {
-//    defaultImg.classList.add('hidden');
-//    performancesImg.classList.remove('hidden');
-//    console.log(event);
-//}
-//
-//function replaceHidden5(event) {
-//    aboutImg.classList.add('hidden');
-//    defaultImg.classList.remove('hidden');
-//}
-//document.getElementById("menu-performances").addEventListener("mouseenter", removeHidden4);
-//document.getElementById("menu-performances").addEventListener("mouseleave", replaceHidden4);
+var aboutImg = document.getElementById("img-about");
 
+function removeHidden5(event) {
+    defaultImg.classList.add('hidden');
+    aboutImg.classList.remove('hidden');
+    console.log(event);
+}
+
+function replaceHidden5(event) {
+    aboutImg.classList.add('hidden');
+    defaultImg.classList.remove('hidden');
+}
+document.getElementById("link-about").addEventListener("mouseenter", removeHidden5);
+document.getElementById("link-about").addEventListener("mouseleave", replaceHidden5);
+
+var contactImg = document.getElementById("img-contact");
+
+function removeHidden6(event) {
+    defaultImg.classList.add('hidden');
+    contactImg.classList.remove('hidden');
+    console.log(event);
+}
+
+function replaceHidden6(event) {
+    contactImg.classList.add('hidden');
+    defaultImg.classList.remove('hidden');
+}
+document.getElementById("link-contact").addEventListener("mouseenter", removeHidden6);
+document.getElementById("link-contact").addEventListener("mouseleave", replaceHidden6);
+ 
 
 
 
@@ -120,7 +135,7 @@ function goToPageContact(event){
     aboutPage.classList.remove('current');
     contactPage.classList.add('current');
     
-     workLink.classList.remove('active');
+    workLink.classList.remove('active');
     contactLink.classList.add('active');
     aboutLink.classList.remove('active');
 }

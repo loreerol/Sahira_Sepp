@@ -36,11 +36,22 @@
         border-spacing: 0;
     }
 
-    a {
+    p {
+    font-family: 'Josefin Slab', sans-serif;
+    }
+    a{
         text-decoration: none;
         color: inherit;
+        font-family: 'Josefin Slab', sans-serif;
     }
     /* Reset ends */
+#title{
+    position: absolute;
+    font-size: 4em;
+   font-family: 'Inknut Antiqua', serif;
+    top: 10%;
+    left: 12%
+}
 
     .flex-parent {
         display: flex;
@@ -51,10 +62,10 @@
     }
 
     li:hover {
-        color: #5d5d5d;
+        color: #20212e;
+        font-weight: 200;
     }
 
-    .active {}
     /* Work section */
    
 .page {
@@ -65,18 +76,21 @@
 .page.current {
         display: inherit;
         opacity: 1;
+    margin-left: 40px
     }
 
    
 .main{
-        font-size: 200%;
+        font-size: 300%;
         background: ;
-        flex-grow: .8;
+        flex-grow: .7;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex-basis: 50%;
+        flex-basis: 45%;
         align-items: center;
+    
+   
     }
     .page ul {
         align-self: center;
@@ -89,7 +103,7 @@
         width: 100%;
         text-align: center;
         align-self: center;
-        /*    font-family: 'Knewave', cursive;*/
+        
     }
 
     .page a {
@@ -125,22 +139,30 @@
     nav ul {
         height: 100vh;
     }
-
+nav li{
+    width: 55px
+}
     nav li {
         transform: rotate(90deg);
-        s transform-origin: left top 1;
+        transform-origin: left top 1;
         justify-content: center;
         display: flex;
-        margin-top: 40px;
+        font-size: 200%;
+        margin-top: 70px;
         padding: 11px;
+        width: 100%
     }
+nav li a{
+    width: 100%
+}
 
     nav li:first-child {
-        margin-top: 35vh;
+        margin-top: 32vh;
     }
 
 .active{
     text-decoration: line-through;
+    color: #20212e
 }
 
 
@@ -151,19 +173,26 @@
     @media (max-width:800px) {
         section {
             flex-direction: column-reverse;
+            
+        }
+        body{
+            overflow: hidden
         }
         .image-container {
             flex-grow: 0;
             flex-basis: 0px;
+           display: none;
         }
         nav {
-            justify-content: center
+            justify-content: center;
+            margin: 0px;
+            padding: 0px;
         }
         nav ul {
             height: auto;
             display: flex;
             flex-direction: row;
-            margin-top: 10px
+            margin-top: 0px
         }
         nav li {
             transform: rotate(0deg);
@@ -171,4 +200,9 @@
         }
         nav li:first-child {
             margin: 0px;
+        }
+        
+        #title{
+            top: inherit;
+            left: inherit;
         }
