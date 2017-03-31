@@ -108,6 +108,8 @@ var aboutLink = document.getElementById('link-about');
 var contactLink = document.getElementById('link-contact');
 var workLink = document.getElementById('link-work');
 
+
+
 function goToPageWork(event){
     aboutPage.classList.remove('current');
     contactPage.classList.remove('current');
@@ -116,6 +118,8 @@ function goToPageWork(event){
     workLink.classList.add('active');
     contactLink.classList.remove('active');
     aboutLink.classList.remove('active');
+    
+    
 }
 
 
@@ -145,4 +149,33 @@ document.getElementById("link-about").addEventListener("click", goToPageAbout);
 document.getElementById("link-contact").addEventListener("click", goToPageContact);
 document.getElementById("link-work").addEventListener("click", goToPageWork);
 
+// animated cross out
+
+window.onload = function() {
+  document.getElementById('ok-work').className = 'cross-out';
+};
+
+
+
+
+//on click #work{
+//if #about = active{
+//	move up X amount;}
+//if #contact = active{
+//	move up X amount;}
+//else do nothing}
+//
+//on click #about{
+//if #work = active{
+//	move down X amount;}
+//if #contact = active{
+//	move up X amount;}
+//else do nothing}
+//
+//on click #contact{
+//if #work = active{
+//	move down x amount;}
+//if #about = active{
+//	move down x amount;}
+//else do nothing}
 

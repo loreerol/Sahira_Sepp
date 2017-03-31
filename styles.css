@@ -46,31 +46,36 @@
     }
     /* Reset ends */
 #title{
-    position: absolute;
     font-size: 4em;
    font-family: 'Inknut Antiqua', serif;
-    top: 10%;
-    left: 12%
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
 }
 
     .flex-parent {
         display: flex;
         height: 100vh;
         color: grey;
+/*        background-color: #caebd0;*/
         background-color: #caebd0;
         font-family: 'Kreon', sans-serif;
     }
 
     li:hover {
-        color: #20212e;
+        color: #263829;
         font-weight: 200;
     }
 
     /* Work section */
+
+
    
 .page {
         display: none;
         opacity: 0;
+    margin-top: 40px
     }
 
 .page.current {
@@ -85,10 +90,12 @@
         background: ;
         flex-grow: .7;
         display: flex;
-        flex-direction: column;
+        flex-direction:;
         justify-content: center;
-        flex-basis: 45%;
+        flex-basis: 40%;
         align-items: center;
+        
+    
     
    
     }
@@ -134,10 +141,12 @@
 
     nav {
         display: flex;
+        
     }
 
     nav ul {
         height: 100vh;
+    
     }
 nav li{
     width: 55px
@@ -150,21 +159,111 @@ nav li{
         font-size: 200%;
         margin-top: 70px;
         padding: 11px;
-        width: 100%
+        width: 100%;
+    
+        
     }
 nav li a{
-    width: 100%
+   padding-left: 10px;
+    padding-right: 10px
 }
 
     nav li:first-child {
         margin-top: 32vh;
     }
 
+
+/* animated line through*/
+/*
 .active{
     text-decoration: line-through;
-    color: #20212e
+}
+*/
+.active{
+     color: #20212e
 }
 
+a, a:visited {
+  text-decoration: none;
+  position: relative;
+  
+}
+
+
+  a:after, a:active:after {
+  content: '';
+  height: 3.5px;
+  position: absolute;
+  bottom: 40%;
+  left: 1%;
+  width: 0%;
+  background: #20212e;
+  transition: 0.3s;
+-webkit-transition-timing-function: ease-in;
+}
+
+
+ .cross-out a:after{
+  width: 100%;
+}
+
+
+/*
+a.block, a:visited.block {
+  display: block;
+  padding: 0.5em;
+}
+*/
+/*
+a.block:hover, a:visited.block:hover {
+  background: #eee;
+}
+*/
+
+#link-about, #link-contact, #page-work{
+    
+}
+
+
+/* contact form*/
+
+#page-contact{
+    font-size: .5em;
+    margin-top: 20%
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #caebd0;
+    padding: 20px;
+}
 
 
 
@@ -175,6 +274,7 @@ nav li a{
             flex-direction: column-reverse;
             
         }
+        
         body{
             overflow: hidden
         }
@@ -185,24 +285,29 @@ nav li a{
         }
         nav {
             justify-content: center;
-            margin: 0px;
-            padding: 0px;
+        
         }
         nav ul {
-            height: auto;
-            display: flex;
+            display: inline-flex;
+            height: 100%;
             flex-direction: row;
-            margin-top: 0px
+            margin-top: 0px;
         }
         nav li {
             transform: rotate(0deg);
-            margin: 0px;
+            margin-top: 0px;
         }
         nav li:first-child {
             margin: 0px;
         }
-        
+        li{
+            margin-top: 0px
+        }
         #title{
+            position: absolute;
             top: inherit;
             left: inherit;
+        }
+        #page-work{
+            visibility: hidden
         }
